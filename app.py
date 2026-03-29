@@ -827,6 +827,6 @@ def actualizar_socio(region):
 # ==============================================================================
 # 6. CORRER APP
 # ==============================================================================
-server = app  # necesario para Render
+server = app.server
 if __name__ == '__main__':
     app.run(debug=False)
