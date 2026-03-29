@@ -15,7 +15,7 @@ from pathlib import Path
 # ==============================================================================
 # 1. RUTAS Y CARGA DE DATOS
 # ==============================================================================
-data_dir = Path(r"C:\Users\jcgb7\OneDrive\MIRTI_2026\Republica_Dominicana\Censo\proyecto_rd_censo\dashboard\data")
+data_dir = Path(__file__).parent / "data"
 
 # Cargar GeoJSON municipal
 with open(data_dir / "municipios_rd.geojson", encoding="utf-8") as f:
